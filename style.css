@@ -1,0 +1,73 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    background-color: #000;
+    border: 3px solid #0f0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 40px #0f0;
+}
+
+td {
+    background-color: #000;
+    border: 2px solid #0f0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f0;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+td[width="50"][height="50"] {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+td:not(:empty) {
+    background-color: #222;
+}
+
+td[data-val="2"] {
+    background-color: #2f2;
+}
+
+td[data-val="4"] {
+    background-color: #1f1;
+}
+
+td[data-val="8"] {
+    background-color: #0f0;
+}
+
+td[data-val="16"] {
+    background-color: #0e0;
+}
+
+td[data-val="32"] {
+    background-color: #0d0;
+}
+
+td[data-val="64"] {
+    background-color: #0c0;
+}
+
+td[data-val="128"], td[data-val="256"] {
+    background-color: #0b0;
+}
+
+td[data-val="512"], td[data-val="1024"], td[data-val="2048"], td[data-val="4096"], td[data-val="8192"], td[data-val="16384"], td[data-val="32768"], td[data-val="65536"] {
+    background-color: #0b0; /* color for 512, 1024, 2048 */
+}
