@@ -1,23 +1,46 @@
-
 # 2048 Game
-
-This is a simple implementation of the popular game 2048.
+This is a very simple implementation of the classic "2048" game. <br>
+It is written in JavaScript and uses the HTML5 canvas for rendering. <br>
 
 ## How to Play
+The game is played on a board of a customizable size. <br>
+The goal is to combine tiles with the same number to create a tile with the number 2048. <br>
+You can move the tiles up, down, left, or right using the arrow keys. <br>
+When you move the tiles, they will slide in the direction you chose. <br>
+If two tiles with the same number collide, they will merge into a single tile with the sum of the two numbers. <br>
+After each move, a new tile with the number 2 or 4 will appear on the board. <br>
+The game ends when there are no legal moves left. <br>
 
-1. Open [`2048.html`](2048.html) in your web browser.
-2. Click the "play" button to start the game.
-3. Use the arrow keys to move the tiles. Tiles with the same number merge into one when they touch.
-4. Add tiles to reach the 2048 tile!
+## Features
+- Customizable board size.
+- Getting the key input from the user.
+- Automatic detection of pieces with the same number.
+- Automatic detection of when the game is over.
 
-## Game Features
+## How to run
+Just open the `2048.html` file in your browser. <br>
 
-- Customizable board size: At the start of the game, you will be prompted to enter the number of rows and columns for the game board.
-- Keyboard controls: Use the arrow keys to move the tiles up, down, left, or right.
-- Game over detection: The game ends when there are no legal moves left.
+## Code structure
+- `2048.html` - The main HTML file that contains the canvas element and the JavaScript code.
+- `2048.js` - The main JavaScript file that contains the game logic.
+- `style.css` - The CSS file that contains the styling for the game.
 
-## Code Overview
+## Future improvements
+- Add a score system.
+- Add a timer.
+- Add a "New Game" button.
+- Add a "Restart" button.
+- Add a "Undo" button.
+- Add a "Save Game" button.
+- Add a "Load Game" button.
+- Add a "Settings" button.
+- Add a "Help" button.
+- Add a "High Scores" button.
+- Add a "Leaderboard" button.
 
-The game logic is implemented in JavaScript in the [`2048.js`](2048.js) file. The game board is represented as a 2D array, and the game logic includes functions for starting the game, building the game board, moving the tiles, and checking if the game is over.
+## Contributing
+Feel free to contribute to this project. <br>
+Please open an issue if you have any suggestions or find any bugs. <br>
 
-The game's appearance is controlled by the CSS in the [`style.css`](style.css) file.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
